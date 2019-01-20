@@ -1,0 +1,34 @@
+﻿
+@model MVCApplication.ViewModels.ResultViewModel
+
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h2>What's Your Sign?</h2>
+
+<br />
+
+<h2>Results</h2>
+
+<br />
+
+@if (@Model.Sign != "")
+{
+
+    <p>Your Zodiacal sign would be: @Model.Sign</p>
+
+
+    <p>Which translates in English to: @Model.Englishtrans</p>
+
+    <br />
+
+}
+
+<br />
+
+@Model.Error
+
+
+
+

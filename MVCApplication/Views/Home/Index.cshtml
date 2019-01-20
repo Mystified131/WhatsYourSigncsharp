@@ -1,0 +1,40 @@
+﻿@model MVCApplication.ViewModels.IndexViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>What's Your Sign?</h2>
+
+<br />
+
+<h5>Input</h5>
+
+<form action='Home/Result' method='POST' align="left">
+    <div>
+        <label>
+            Please enter your birth month.
+        </label><br><br />
+        <input type="radio" name="Bmonth" value="1">January<br>
+        <input type="radio" name="Bmonth" value="2">February<br>
+        <input type="radio" name="Bmonth" value="3">March<br>
+        <input type="radio" name="Bmonth" value="4">April<br>
+        <input type="radio" name="Bmonth" value="5">May<br>
+        <input type="radio" name="Bmonth" value="6">June<br>
+        <input type="radio" name="Bmonth" value="7">July<br>
+        <input type="radio" name="Bmonth" value="8">August<br>
+        <input type="radio" name="Bmonth" value="9">September<br>
+        <input type="radio" name="Bmonth" value="10">October<br>
+        <input type="radio" name="Bmonth" value="11">November<br>
+        <input type="radio" name="Bmonth" value="12" checked="checked">December<br>
+    </div>
+    <br /><br />
+
+    <label>
+        Please enter your (numerical) date of birth:
+    </label><br><br>
+    <input name="Bday" type="text" value="" />
+    <br /><br />
+    <input type="submit" value="Find Results" />
+
+</form>
