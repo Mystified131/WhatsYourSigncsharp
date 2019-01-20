@@ -5,29 +5,35 @@
     ViewData["Title"] = "Result";
 }
 
-<h2>What's Your Sign?</h2>
+
+<h5>Results:</h5>
 
 <br />
 
-<h5>Results</h5>
-
-<br />
-
-@if(@Model.Sign != null)
+@if (@Model.Sign != null)
 
 {
 
-    <p>Your Zodiacal sign would be: @Model.Sign</p>
+    <img src=@Model.Imageplace />
 
+    <br /><br />
+
+    <p>Your Zodiacal sign would be: @Model.Sign</p>
 
     <p>Which translates in English to: @Model.Englishtrans</p>
 
+    <p>The dates for this sign are: @Model.Dates</p>
+
+    <p>@Model.Desc</p>
+
+
+
+
     <br />
 
-    <img src = @Model.Imageplace />
+    <p><em>Some information paraphrased from the <a href="https://labyrinthos.co/">Labyrinthos</a> site.</em></p>
 
-         }
-
+}
 
 
 <br />

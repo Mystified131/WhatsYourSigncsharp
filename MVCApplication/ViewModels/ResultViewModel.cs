@@ -15,6 +15,8 @@ namespace MVCApplication.ViewModels
         public string Sign { get; set; }
         public string Englishtrans { get; set; }
         public string Imageplace { get; set; }
+        public string Desc { get; set; }
+        public string Dates { get; set; }
         public String Error { get; set; }
     }
 }
