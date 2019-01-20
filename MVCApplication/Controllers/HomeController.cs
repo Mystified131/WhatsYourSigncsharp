@@ -50,6 +50,7 @@ namespace MVCApplication.Controllers
 
                 resultViewModel.Sign = "Aquarius";
                 resultViewModel.Englishtrans = "The Water-Bearer";
+                    resultViewModel.Imageplace = "/images/Aquarius.png";
 
                 return View(resultViewModel);
 
@@ -63,6 +64,7 @@ namespace MVCApplication.Controllers
             
                     resultViewModel.Sign = "Pisces";
                     resultViewModel.Englishtrans = "The Fish";
+                    resultViewModel.Imageplace = "/images/Pisces.png";
 
                     return View(resultViewModel);
 
@@ -76,6 +78,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Aries";
                     resultViewModel.Englishtrans = "The Ram";
+                    resultViewModel.Imageplace = "/images/Aries.png";
 
                     return View(resultViewModel);
 
@@ -89,6 +92,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Taurus";
                     resultViewModel.Englishtrans = "The Bull";
+                    resultViewModel.Imageplace = "/images/Taurus.png";
 
                     return View(resultViewModel);
 
@@ -102,6 +106,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Gemini";
                     resultViewModel.Englishtrans = "The Twins";
+                    resultViewModel.Imageplace = "/images/Gemini.png";
 
                     return View(resultViewModel);
                 }
@@ -114,6 +119,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Cancer";
                     resultViewModel.Englishtrans = "The Crab";
+                    resultViewModel.Imageplace = "/images/Cancer.png";
 
                     return View(resultViewModel);
 
@@ -127,6 +133,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Leo";
                     resultViewModel.Englishtrans = "The Lion";
+                    resultViewModel.Imageplace = "/images/Leo.png";
 
                     return View(resultViewModel);
 
@@ -140,6 +147,7 @@ namespace MVCApplication.Controllers
 
                      resultViewModel.Sign = "Virgo";
                      resultViewModel.Englishtrans = "The Maiden";
+                    resultViewModel.Imageplace = "/images/Virgo.png";
 
                     return View(resultViewModel);
 
@@ -152,6 +160,7 @@ namespace MVCApplication.Controllers
                            
                     resultViewModel.Sign = "Libra";
                     resultViewModel.Englishtrans = "The Scales";
+                    resultViewModel.Imageplace = "/images/Libra.png";
 
                     return View(resultViewModel);
 
@@ -164,6 +173,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Scorpio";
                     resultViewModel.Englishtrans = "The Scorpion";
+                    resultViewModel.Imageplace = "/images/Scorpio.png";
 
                     return View(resultViewModel);
 
@@ -177,6 +187,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Saggitarius";
                     resultViewModel.Englishtrans = "The Archer";
+                    resultViewModel.Imageplace = "/images/Saggitarius.png";
 
                     return View(resultViewModel);
 
@@ -190,6 +201,7 @@ namespace MVCApplication.Controllers
 
                     resultViewModel.Sign = "Capricorn";
                     resultViewModel.Englishtrans = "The Sea-Goat";
+                    resultViewModel.Imageplace = "/images/Capricorn.png";
 
                     return View(resultViewModel);
 
