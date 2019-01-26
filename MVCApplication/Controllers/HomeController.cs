@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MVCApplication.Models;
@@ -243,8 +244,80 @@ namespace MVCApplication.Controllers
             return Redirect("/Home/Error");
 
         }
-                         
-                                                }
+
+        public IActionResult Prediction()
+        {
+            PredictionViewModel predictionViewModel = new PredictionViewModel();
+
+            List<string> alist = new List<string>();
+            List<string> blist = new List<string>();
+            List<string> clist = new List<string>();
+            List<string> dlist = new List<string>();
+            List<string> elist = new List<string>();
+
+            string a1 = "Greetings, I hope you are well. ";
+            string a2 = "Salutations. A great day, isn't it? ";
+            string a3 = "Ah, what a nice day to say, 'Hello' ";
+
+            alist.Add(a1);
+            alist.Add(a2);
+            alist.Add(a3);
+
+            string b1 = "Today, let's focus on love. ";
+            string b2 = "Today, let's think about money. ";
+            string b3 = "Today, let's pense on emotions. ";
+
+            blist.Add(b1);
+            blist.Add(b2);
+            blist.Add(b3);
+
+            string c1 = "Things are looking good in that department. ";
+            string c2 = "Things are looking not so hot in that department. ";
+            string c3 = "Things are so/so in that regard. ";
+
+            clist.Add(c1);
+            clist.Add(c2);
+            clist.Add(c3);
+
+            string d1 = "Keep trying to put effort in that direction. ";
+            string d2 = "If you give up, it will get worse. ";
+            string d3 = "You may ask for help, but do not quit. ";
+
+            dlist.Add(d1);
+            dlist.Add(d2);
+            dlist.Add(d3);
+
+            string e1 = "Remember, all things can change. ";
+            string e2 = "Remember, some things are always like that. ";
+            string e3 = "Remember, whatever happens-- there you are. ";
+
+            elist.Add(e1);
+            elist.Add(e2);
+            elist.Add(e3);
+
+            StringBuilder Horoscope = new StringBuilder();
+
+            Random random = new Random();
+            int apart = random.Next(0, 2);
+            int bpart = random.Next(0, 2);
+            int cpart = random.Next(0, 2);
+            int dpart = random.Next(0, 2);
+            int epart = random.Next(0, 2);
+
+            Horoscope.Append(alist[apart]);
+            Horoscope.Append(blist[bpart]);
+            Horoscope.Append(clist[cpart]);
+            Horoscope.Append(dlist[dpart]);
+            Horoscope.Append(elist[epart]);
+
+            string Today = Horoscope.ToString();
+
+            predictionViewModel.Prediction = Today;
+
+            return View(predictionViewModel);
+        }
+
+    }
 
 
                                             }

@@ -1,0 +1,28 @@
+﻿@model MVCApplication.ViewModels.PredictionViewModel
+
+@{
+    ViewData["Title"] = "Prediction";
+}
+
+<h2>Today's Horoscope</h2>
+
+<br />
+
+<p>
+    Today is:
+    <script>
+
+        var today = new Date()
+        document.write(today)
+
+    </script>
+</p>
+
+<p>Your daily horoscope is:</p>
+
+@Model.Prediction
+
+<br><br>
+
+<p><em>Thomas Park does not believe in Astrology as a force to guide one' life. Please use these predictions only at your own risk</em></p>
+
