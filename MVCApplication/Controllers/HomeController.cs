@@ -257,7 +257,7 @@ namespace MVCApplication.Controllers
 
             string a1 = "Greetings, I hope you are well. ";
             string a2 = "Salutations. A great day, isn't it? ";
-            string a3 = "Ah, what a nice day to say, 'Hello' ";
+            string a3 = "Ah, what a nice day to say, 'Hello'. ";
 
             alist.Add(a1);
             alist.Add(a2);
@@ -298,11 +298,11 @@ namespace MVCApplication.Controllers
             StringBuilder Horoscope = new StringBuilder();
 
             Random random = new Random();
-            int apart = random.Next(0, 2);
-            int bpart = random.Next(0, 2);
-            int cpart = random.Next(0, 2);
-            int dpart = random.Next(0, 2);
-            int epart = random.Next(0, 2);
+            int apart = random.Next(0, 3);
+            int bpart = random.Next(0, 3);
+            int cpart = random.Next(0, 3);
+            int dpart = random.Next(0, 3);
+            int epart = random.Next(0, 3);
 
             Horoscope.Append(alist[apart]);
             Horoscope.Append(blist[bpart]);
